@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label=<x<SUB>3</SUB> &le; 6.8<br/>gini = 0.18<br/>samples = 80<br/>value = [72, 8]<br/>class = No>, fillcolor="#e88f4f"] ;
+1 [label=<x<SUB>4</SUB> &le; 210.0<br/>gini = 0.1<br/>samples = 76<br/>value = [72, 4]<br/>class = No>, fillcolor="#e68844"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<x<SUB>4</SUB> &le; 180.0<br/>gini = 0.053<br/>samples = 74<br/>value = [72, 2]<br/>class = No>, fillcolor="#e6843e"] ;
+1 -> 2 ;
+3 [label=<gini = 0.0<br/>samples = 61<br/>value = [61, 0]<br/>class = No>, fillcolor="#e58139"] ;
+2 -> 3 ;
+4 [label=<x<SUB>3</SUB> &le; 6.35<br/>gini = 0.26<br/>samples = 13<br/>value = [11, 2]<br/>class = No>, fillcolor="#ea985d"] ;
+2 -> 4 ;
+5 [label=<gini = 0.0<br/>samples = 8<br/>value = [8, 0]<br/>class = No>, fillcolor="#e58139"] ;
+4 -> 5 ;
+6 [label=<x<SUB>3</SUB> &le; 6.55<br/>gini = 0.48<br/>samples = 5<br/>value = [3, 2]<br/>class = No>, fillcolor="#f6d5bd"] ;
+4 -> 6 ;
+7 [label=<x<SUB>2</SUB> &le; 21.21<br/>gini = 0.444<br/>samples = 3<br/>value = [1, 2]<br/>class = Yes>, fillcolor="#9ccef2"] ;
+6 -> 7 ;
+8 [label=<gini = 0.0<br/>samples = 1<br/>value = [0, 1]<br/>class = Yes>, fillcolor="#399de5"] ;
+7 -> 8 ;
+9 [label=<x<SUB>2</SUB> &le; 25.215<br/>gini = 0.5<br/>samples = 2<br/>value = [1, 1]<br/>class = No>, fillcolor="#ffffff"] ;
+7 -> 9 ;
+10 [label=<gini = 0.0<br/>samples = 1<br/>value = [1, 0]<br/>class = No>, fillcolor="#e58139"] ;
+9 -> 10 ;
+11 [label=<gini = 0.0<br/>samples = 1<br/>value = [0, 1]<br/>class = Yes>, fillcolor="#399de5"] ;
+9 -> 11 ;
+12 [label=<gini = 0.0<br/>samples = 2<br/>value = [2, 0]<br/>class = No>, fillcolor="#e58139"] ;
+6 -> 12 ;
+13 [label=<gini = 0.0<br/>samples = 2<br/>value = [0, 2]<br/>class = Yes>, fillcolor="#399de5"] ;
+1 -> 13 ;
+14 [label=<gini = 0.0<br/>samples = 4<br/>value = [0, 4]<br/>class = Yes>, fillcolor="#399de5"] ;
+0 -> 14 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+}
